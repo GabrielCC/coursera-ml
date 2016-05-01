@@ -34,8 +34,7 @@ n = sizes(2);
 
 for i=1:m
     for j=1:n
-        X_norm(i,j) = (X(i,j) - mu(j)) / sigma(j);
-    end
+    X_norm(i,:) = (X(i,:) - mu) / sigma;
 end
 
 
