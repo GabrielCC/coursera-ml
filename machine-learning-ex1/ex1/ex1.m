@@ -68,7 +68,7 @@ theta = gradientDescent(X, y, theta, alpha, iterations);
 % print theta to screen
 fprintf('Theta found by gradient descent: ');
 fprintf('%f %f \n', theta(1), theta(2));
-
+pause;
 % Plot the linear fit
 hold on; % keep previous plot visible
 plot(X(:,2), X*theta, '-')
