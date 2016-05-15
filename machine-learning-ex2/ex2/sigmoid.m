@@ -8,8 +8,8 @@ g = zeros(size(z));
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the sigmoid of each value of z (z can be a matrix,
 %               vector or scalar).
-
-
+e = exp(1);
+g =  ones(size(z)) ./ (1 + power(e, -z));
 
 
 
